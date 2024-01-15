@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { carData } from "../CarsData/CarsData";
+import { GoDotFill } from "react-icons/go";
+import { carData } from "@/Components/CarsData/CarsData";
 
 export default function Cars() {
   return (
@@ -12,8 +13,9 @@ export default function Cars() {
       <form className="rounded-2xl flex gap-8 items-center justify-between px-24 py-8 shadow-2xl flex-col md:flex-row">
         <div className="flex items-center w-full gap-8 sm:flex-row flex-col justify-center md:justify-start">
           <div>
+            <span className="mr-4">From</span>
             <input
-              type="text"
+              type="date"
               name="From"
               id="from"
               placeholder="From"
@@ -21,8 +23,9 @@ export default function Cars() {
             />
           </div>
           <div>
+          <span className="mr-4">To</span>
             <input
-              type="text"
+              type="date"
               name="to"
               id="t0"
               placeholder="To"
@@ -58,10 +61,20 @@ const CarCard = ({ data }) => {
       </div>
       <div className="  px-4">
         <div className="flex items-center justify-between w-full"> 
-          <h1>
+          <h1 className="text-xl border-b-2 border-green-500">
             {data.name} {data.modal}
           </h1>
-          <h1 className="text-green-500">{data.status}</h1>
+          {data.status === "Booked" ? (
+            <h1 className={`text-red-500 flex items-center justify-center`}>
+              <GoDotFill />
+              {data?.status}
+            </h1>
+          ) : (
+            <h1 className={`text-green-500 flex items-center justify-center`}>
+              <GoDotFill />
+              {data?.status}
+            </h1>
+          )}
         </div>
         <div className="flex items-center justify-between">
           <h1 className="text-2xl">{data.price}</h1>
