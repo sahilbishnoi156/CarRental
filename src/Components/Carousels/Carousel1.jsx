@@ -72,7 +72,7 @@ export default function App() {
   return (
     <div className="max-w-full md:h-[80vh] h-[60vh] w-full relative group flex flex-col items-center justify-center">
       <div className="text-black text-[6vh] mb-2 self-start">        
-        Kahana Cars
+        Kanha Cars
       </div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}

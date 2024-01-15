@@ -10,7 +10,7 @@ export default function page() {
   return (
     <div className=" text-black px-4 sm:px-10">
       <div className="text-4xl flex items-start font-semibold my-8">
-        Kahna Motors
+        Kanha Cars
       </div>
       <form className="rounded-2xl flex gap-8 items-center justify-between px-24 py-8 shadow-2xl flex-col md:flex-row">
         <div className="flex items-center w-full gap-8 sm:flex-row flex-col justify-center md:justify-start">
