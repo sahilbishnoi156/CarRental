@@ -7,7 +7,7 @@ import { carData } from "@/Components/CarsData/CarsData";
 export default function Cars() {
   return (
     <div className=" text-black px-4 sm:px-10">
-      <div className="text-[5vw] flex items-center justify-center text-green-400 font-semibold my-8">
+      <div className="text-[5vw] flex items-center justify-center text-green-400 font-semibold mt-8">
         RENT A CAR
       </div>
       <form className="rounded-2xl flex gap-8 items-center justify-between px-24 py-8 shadow-2xl flex-col md:flex-row">

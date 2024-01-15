@@ -70,22 +70,22 @@ export default function App() {
   }, [currentIndex, slides.length]);
 
   return (
-    <div className="max-w-full h-[80vh] w-full relative group flex flex-col items-center justify-center">
-      <div className="text-black text-[3vw] mb-2 self-start">        
+    <div className="max-w-full md:h-[80vh] h-[60vh] w-full relative group flex flex-col items-center justify-center">
+      <div className="text-black text-[6vh] mb-2 self-start">        
         Kahana Cars
       </div>
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
-      <div className="flex flex-col items-start justify-center absolute left-4 md:left-16 bottom-1/4 text-2xl text-white cursor-pointer rounded-full">
+      <div className="flex flex-col items-start justify-center absolute left-4 md:left-16 md:bottom-1/4 bottom-16 text-2xl text-white cursor-pointer rounded-full">
         <h1 className="text-green-400 text-xl duration-200 md:text-4xl">{slides[currentIndex].quote}</h1>
         <p className="text-sm md:text-xl">{slides[currentIndex].line}</p>
       </div>
       {/* Left Arrow */}
       <div
         className="hidden items-center justify-center group-hover:flex absolute left-5 top-[50%] -translate-y-1/2 text-2xl text-white cursor-pointer rounded-full"
-        onClick={nextSlide}
+        onClick={prevSlide}
       >
         <BsChevronCompactLeft size={40} />
       </div>
