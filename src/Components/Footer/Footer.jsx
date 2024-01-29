@@ -22,18 +22,18 @@ export default function Footer() {
       </div>
       <div className="container flex items-center justify-between text-black px-24 md:flex-row flex-col">
         <div className="flex items-center justify-center md:flex-row flex-col md:gap-16 mb-4">
-          <a href="tel:9779970515">+91 9779970515</a>
-          <div>help.kanhatravells@gmail.com</div>
+          <a href="tel:9779970515" className="text-xl cursor-pointer">+91 9779970515</a>
+          <a className="text-xl cursor-pointer" href="mailto:help.kanhatravells@gmail.com">help.kanhatravells@gmail.com</a>
         </div>
-        <div className="mb-9 flex justify-center">
+        <div className="mb-9 flex justify-center items-center gap-6">
           <a
             href="https://www.facebook.com/people/kanha-tour-and-travels/100090120244701/?mibextid=ZbWKwL"
             target="_blank"
-            className="mr-9 text-black"
+            className=" text-black hover:text-blue-500 hover:scale-125 duration-150"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -43,11 +43,11 @@ export default function Footer() {
           <a
             href="https://instagram.com/kanha_tour_and_travels?igshid=ZGUzMzM3NWJiOQ=="
             target="_blank"
-            className="mr-9 text-black"
+            className=" text-black hover:text-blue-500 hover:scale-125 duration-150"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4"
+              className="h-5 w-5"
               fill="currentColor"
               viewBox="0 0 24 24"
             >
@@ -57,12 +57,12 @@ export default function Footer() {
           <a
             href="https://wa.me/9779970515?text=I'm%20interested%20in%20your%20car%20for%20sale"
             target="_blank"
-            className="mr-9 text-black"
+            className=" text-black hover:text-blue-500 hover:scale-125 duration-150"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="20"
+              height="20"
               fill="currentColor"
               className="bi bi-whatsapp"
               viewBox="0 0 16 16"

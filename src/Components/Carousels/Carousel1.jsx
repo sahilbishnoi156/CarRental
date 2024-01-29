@@ -3,39 +3,7 @@ import { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-export default function App() {
-  const slides = [
-    {
-      quote: "Zero Worries",
-      line: "Your journey, your pace!",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/d8e03eca1c5e5bcf4363a9191a0a406b.webp",
-    },
-    {
-      quote: "Effortless Elegance",
-      line: "Elevate your travel experience with style and sophistication.",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/b826677e31b9d490bc0e9ff5b810e87a.png",
-    },
-    {
-      quote: "Instant Adventure",
-      line: "we make it easy to turn your travel plans into instant adventures.",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/add3515cee57c3f3d36023ce13b5c8e2.png",
-    },
-    {
-      quote: "Doorstep Delviery",
-      line: "Don't worry about picking and droping your vehicles.",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/d8e03eca1c5e5bcf4363a9191a0a406b.webp",
-    },
-    {
-      quote: "Effortless Elegance",
-      line: "Elevate your travel experience with style and sophistication.",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/b826677e31b9d490bc0e9ff5b810e87a.png",
-    },
-    {
-      quote: "Instant Adventure",
-      line: "we make it easy to turn your travel plans into instant adventures.",
-      url: "https://assets.cars24.com/production/c2b-website/240112175709/js/add3515cee57c3f3d36023ce13b5c8e2.png",
-    },
-  ];
+export default function MainCarousel({slides}) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -71,9 +39,7 @@ export default function App() {
 
   return (
     <div className="max-w-full md:h-[80vh] h-[60vh] w-full relative group flex flex-col items-center justify-center">
-      <div className="text-black text-[6vh] mb-2 self-start">        
-        Kanha Cars
-      </div>
+      
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"

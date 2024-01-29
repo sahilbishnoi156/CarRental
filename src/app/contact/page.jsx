@@ -1,25 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import { IoCall } from "react-icons/io5";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export default function page() {
   return (
-    <div className=" w-screen relative text-black px-16 pt-8">
+    <div className="text-black p-2 sm:p-16">
       <div className="text-4xl">Contact Details</div>
-      <div className="flex flex-col items-start justify-center text-2xl mt-8 gap-6">
-        <div>
-          <span className="text-green-600 mr-4">Number: </span> +91 9779970515
-        </div>
-        <div>
-          <span className="text-green-600 mr-4">Email: </span>{" "}
-          help.kanhatravells@gmail.com
-        </div>
-        <div>
-          <span className="text-green-600 mr-4">Adress: </span>{" "}
-          <p className="text-xl ml-8">
-            SHOP NO. LG-25, VIP CENTRAL, <br />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-16 mt-8 text-2xl">
+        <a className="border-2 border-black flex items-center justify-center gap-2 rounded-lg cursor-pointer sm:hover:scale-105 duration-300 min-w-[290px] min-h-[170px] px-4 hover:shadow-2xl" href="tel:9779970515">
+          <div>
+            <IoCall size={56} className="text-green-400" />
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>+91 9779970515</p>
+          </div>
+        </a>
+        <div className="border-2 border-black  min-w-[290px] min-h-[170px] flex items-center justify-center gap-2 rounded-lg sm:hover:scale-105 duration-300 px-4 hover:shadow-2xl" >
+          <div>
+            <FaLocationDot size={56} className="text-green-400" />
+          </div>
+          <div>
+            <h3>Address</h3>
+            <p className="text-sm">SHOP NO. LG-25, VIP CENTRAL, <br />
             NEAR SOUTH CITY, VIP ROAD <br/>
-            ZIRAKPUR
-          </p>
+            ZIRAKPUR</p>
+          </div>
+        </div>
+        <a className="border-2 border-black   min-w-[290px] min-h-[170px] flex items-center justify-center gap-2 rounded-lg cursor-pointer sm:hover:scale-105 duration-300 px-2 hover:shadow-2xl" href="mailto:help.kanhatravells@gmail.com">
+          <div>
+            <MdEmail size={56} className="text-green-400" />
+          </div>
+          <div>
+            <h3>E - Mail</h3>
+            <p className="sm:text-xl text-sm">help.kanhatravells@gmail.com</p>
+          </div>
+        </a>
+        <div>
+        {/* <Map address="1600 Amphitheatre Parkway, Mountain View, CA" /> */}
         </div>
       </div>
     </div>

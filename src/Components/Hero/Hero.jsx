@@ -1,13 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from 'next/image'
-import React from 'react'
-import CarouselBasicExample from '../Carousels/Carousel1'
-
+import React from "react";
+import MainCarousel from "../Carousels/Carousel1";
+import { slides } from "../CarsData/CarsData";
 
 export default function Hero() {
   return (
-    <div className='mt-4 px-8'>
-        <CarouselBasicExample/>
+    <div className="mt-4 sm:px-8 px-2">
+      <div className="text-black text-[6vh] mb-2 self-start">Kanha Cars</div>
+      <MainCarousel slides={slides} />
     </div>
-  )
+  );
 }
