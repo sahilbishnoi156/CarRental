@@ -38,13 +38,13 @@ export default function MainCarousel({slides}) {
   }, [currentIndex, slides.length]);
 
   return (
-    <div className="max-w-full md:h-[80vh] h-[60vh] w-full relative group flex flex-col items-center justify-center">
+    <div className="max-w-full md:h-[80vh] h-[35vh] w-full relative group flex flex-col items-center justify-center">
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
-      <div className="flex flex-col items-start justify-center absolute left-4 md:left-16 md:bottom-1/4 bottom-16 text-2xl text-white cursor-pointer rounded-full">
+      <div className="flex flex-col items-start justify-center absolute left-2 md:left-16 md:bottom-1/4 bottom-16 text-2xl text-white cursor-pointer rounded-full">
         <h1 className="text-green-400 text-xl duration-200 md:text-4xl">{slides[currentIndex].quote}</h1>
         <p className="text-sm md:text-xl">{slides[currentIndex].line}</p>
       </div>

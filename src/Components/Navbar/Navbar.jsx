@@ -35,7 +35,7 @@ export default function Navbar() {
   }, [dropdown]); // Include dropdown in dependency array
 
   return (
-    <nav className="bg-white text-black py-4 px-1 sm:px-6 flex items-center justify-between gap-16">
+    <nav className="bg-white text-black py-4 px-2 sm:px-6 flex items-center justify-between gap-16">
       <Link href={"/"} className="flex shrink-0 gap-2 items-end ">
         <FaCarRear color="green" size={25} />
         Kanha Cars
