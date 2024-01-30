@@ -42,10 +42,10 @@ export default function SearchCar({limit=carData.length}) {
           ? carData
               .slice(0, 4)
               .map((data, index) => (
-                <CarCard key={`${data.name}${index}`} data={data} dataInd={index} />
+                <CarCard key={`${data.name}${data.id}`} data={data}  />
               ))
           : filteredCars.slice(0,limit).map((data, index) => (
-              <CarCard key={`${data.name}${index}`} data={data} dataInd={index} />
+              <CarCard key={`${data.name}${data.id}`} data={data}  />
             ))}
       </div>
     </>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { FaArrowLeftLong } from "react-icons/fa6";
 
-export default function CarCard({data, dataInd, type='2x2'}) {
+export default function CarCard({data, type='2x2'}) {
   return (
     <Link href={`/allCars/${data.id}?name=${data.name}&modal=${data.type}`} className="flex flex-col gap-4 relative cursor-pointer">
     <div className="rounded-lg sm:rounded-xl overflow-hidden group relative h-auto md:h-96">
@@ -17,7 +17,7 @@ export default function CarCard({data, dataInd, type='2x2'}) {
         <FaArrowLeftLong color="white" size={20} />
       </div>
     </div>
-    <div className="  px-4">
+    <div className="px-4">
       <div className={`flex  justify-between w-full flex-row items-center`}>
         <h1>
           {data?.name} {data?.modal}
