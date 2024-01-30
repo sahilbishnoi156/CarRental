@@ -3,6 +3,11 @@ import CarCard from "@/Components/CarCard/CarCard";
 import { carData } from "@/Components/CarsData/CarsData";
 import SearchCar from "@/Components/SearchCar";
 
+export const metadata = {
+  title: 'All Cars',
+  description: 'Experience the freedom and flexibility of exploring your destination at your own pace with our reliable and convenient self-drive car rental service.'
+}
+
 
 export default function page() {
   return (

@@ -2,6 +2,11 @@ import MainCarousel from "@/Components/Carousels/Carousel1";
 import { slides } from "@/Components/CarsData/CarsData";
 import React from "react";
 
+export const metadata = {
+  title: 'About Us',
+  description: 'Experience the freedom and flexibility of exploring your destination at your own pace with our reliable and convenient self-drive car rental service.'
+}
+
 
 export default function page() {
   return (

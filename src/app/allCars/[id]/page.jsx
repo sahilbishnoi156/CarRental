@@ -4,6 +4,17 @@ import { carData } from "@/Components/CarsData/CarsData";
 import CarCard from "@/Components/CarCard/CarCard";
 import Image from "next/image";
 
+export async function generateMetadata({params}){
+  const data = carData[params.id - 1];
+  return {
+    title: `${data.name} ${data.modal} ${data.engine}`,
+    description: data.about || "Experience the freedom and flexibility of exploring your destination at your own pace with our reliable and convenient self-drive car rental service.",
+    alteranates:{
+      canonical: `/allCars/${params.id - 1}?name=${data.name}&modal=${data.modal}`
+    }
+  }
+}
+
 export default function Page({ params }) {
   const data = carData[params.id - 1];
 
@@ -61,10 +72,8 @@ export default function Page({ params }) {
             <p className="text-xl text-gray-700">{data.about}</p>
           </div>
         )}
-        <div  className="text-3xl cursor-pointer py-1 px-4 rounded-lg bg-green-500 text-white hover:bg-green-700">
-          <a href="tel:9779970515">
-            Call Now
-          </a>
+        <div className="text-3xl cursor-pointer py-1 px-4 rounded-lg bg-green-500 text-white hover:bg-green-700">
+          <a href="tel:9779970515">Call Now</a>
         </div>
       </div>
 

@@ -4,6 +4,11 @@ import { IoCall } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
+export const metadata = {
+  title: 'Contact Us',
+  description: 'Experience the freedom and flexibility of exploring your destination at your own pace with our reliable and convenient self-drive car rental service.'
+}
+
 export default function page() {
   return (
     <div className="text-black p-2 sm:p-16">
