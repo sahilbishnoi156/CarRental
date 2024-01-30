@@ -10,6 +10,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const iconRef = React.useRef(null)
   const dropdown = React.useRef(null);
   const [inView, setInView] = React.useState(false);
 
@@ -18,7 +19,8 @@ export default function Navbar() {
     const handleClickOutside = (event) => {
       if (
         dropdown.current &&
-        !dropdown.current.contains(event.target)
+        !dropdown.current.contains(event.target) && 
+        !iconRef.current.contains(event.target)
       ) {
         setInView(false);
       }
@@ -79,6 +81,7 @@ export default function Navbar() {
       </div>
       <div
         className="relative z-30 lg:hidden block"
+        ref={iconRef}
         onClick={() => {
           setInView(!inView);
         }}
