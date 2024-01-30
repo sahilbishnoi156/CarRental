@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 
-export default function MainCarousel({slides}) {
+export default function CarCarousel({slides}) {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,19 +35,15 @@ export default function MainCarousel({slides}) {
       // Clear the interval when the component is unmounted
       clearInterval(interval);
     };
-  }, [currentIndex, slides.length]);
+  }, [currentIndex, slides?.length]);
 
   return (
-    <div className="max-w-full md:h-[80vh] h-[35vh] w-full relative group flex flex-col items-center justify-center">
+    <div className="max-w-full md:h-[90vh] h-[35vh] w-full relative group flex flex-col items-center justify-center">
       
       <div
-        style={{ backgroundImage: `url(${slides[currentIndex]?.url})` }}
+        style={{ backgroundImage: `url(${slides[currentIndex]})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
       ></div>
-      <div className="flex flex-col items-start justify-center absolute left-2 md:left-16 md:bottom-1/4 bottom-16 text-2xl text-white cursor-pointer rounded-full">
-        <h1 className="text-green-400 text-xl duration-200 md:text-4xl">{slides[currentIndex]?.quote}</h1>
-        <p className="text-sm md:text-xl">{slides[currentIndex]?.line}</p>
-      </div>
       {/* Left Arrow */}
       <div
         className="hidden items-center justify-center group-hover:flex absolute left-5 top-[50%] -translate-y-1/2 text-2xl text-white cursor-pointer rounded-full"

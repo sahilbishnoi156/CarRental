@@ -16,12 +16,18 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image({ params }) {
-  const data = carData[params.id - 1];
+  let data;
+  for(var key in carData){
+    if(carData[key]?.id?.toString() === params.id){
+      data = carData[key];
+      break;
+    }
+  }
   return new ImageResponse(
     (
       <img
         alt="not found"
-        src={data?.imageUrl}
+        src={data?.imageUrls[0]}
         className="h-full w-full object-cover"
       />
     ),

@@ -5,13 +5,14 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function CarCard({data, dataInd, type='2x2'}) {
   return (
-    <Link href={`/allCars/${dataInd+1}?name=${data.name}&modal=${data.type}`} className="flex flex-col gap-4 relative cursor-pointer">
+    <Link href={`/allCars/${data.id}?name=${data.name}&modal=${data.type}`} className="flex flex-col gap-4 relative cursor-pointer">
     <div className="rounded-lg sm:rounded-xl overflow-hidden group relative h-auto md:h-96">
       <img
-        src={data?.imageUrl}
+        src={data?.imageUrls[0]}
         alt="notFound"
         className="group-hover:scale-110 group-hover:brightness-75 duration-500 object-cover h-full w-full"
       />
+      
       <div className="absolute right-4 top-4 rotate-[135deg] hidden group-hover:block duration-100">
         <FaArrowLeftLong color="white" size={20} />
       </div>
