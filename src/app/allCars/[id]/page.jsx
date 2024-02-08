@@ -83,7 +83,7 @@ export default function Page({ params }) {
       <div className="my-8">
         <h1 className="mb-2 text-[5vh] text-green-400">More Like This :</h1>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {carData?.map((item, index) => {
+          {carData?.slice(0,6).map((item, index) => {
             return (
               <CarCard key={item} data={item} dataInd={index} type="3x3" />
             );

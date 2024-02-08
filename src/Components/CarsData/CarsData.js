@@ -9,7 +9,10 @@ export const carData = [
     engine: "1197 cc",
     price: "250/hr",
     imageUrls:
-      ["https://static3.toyotabharat.com/images/showroom/glanza/new/exterior/01.jpg"],
+      [["https://static3.toyotabharat.com/images/showroom/glanza/new/exterior/01.jpg"],
+      ["'/photos/toyotaGlanza/glanzasidefile.jfif'"]],
+      
+      
     about: 'The Toyota Glanza has 1 Petrol Engine and 1 CNG Engine on offer. The Petrol engine is 1197 cc while the CNG engine is 1197 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Glanza has a mileage of 22.35 kmpl to 30.61 km/kg . The Glanza is a 5 seater 4 cylinder car and has length of 3990, width of 1745 and a wheelbase of 2520.'
   },
   {
@@ -22,7 +25,9 @@ export const carData = [
     engine: "1497 cc",
     price: "250/hr",
     imageUrls:
-      ["https://imgd.aeplcdn.com/1200x900/n/cw/ec/46757/hyundai-creta-exterior22.jpeg?wm=0",],
+      [["https://imgd.aeplcdn.com/1200x900/n/cw/ec/46757/hyundai-creta-exterior22.jpeg?wm=0"],
+      ["/photos/hyundaiCreta2/1.jpeg"],
+      ["/photos/hyundaiCreta2/2.jpg"]],
     about:
       "The Hyundai Creta has 1 Diesel Engine and 2 Petrol Engine on offer. The Diesel engine is 1493 cc while the Petrol engine is 1497 cc and 1482 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Creta has a mileage of 17.4 to 21.8 kmpl . The Creta is a 5 seater 4 cylinder car and has length of 4330, width of 1790 and a wheelbase of 2610.",
   },
@@ -36,7 +41,9 @@ export const carData = [
     engine: "1497 cc",
     price: "250/hr",
     imageUrls:
-      ["https://www.rushlane.com/wp-content/uploads/2021/08/hyundai-creta-price-increase-aug-2021-1200x900.jpg"],
+      [["https://www.rushlane.com/wp-content/uploads/2021/08/hyundai-creta-price-increase-aug-2021-1200x900.jpg"],
+      ["/photos/hyundaiCreta/1.jpg"],
+      ["/photos/hyundaiCreta/2.jpg"]],
     about:
       "The Hyundai Creta has 1 Diesel Engine and 2 Petrol Engine on offer. The Diesel engine is 1493 cc while the Petrol engine is 1497 cc and 1482 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Creta has a mileage of 17.4 to 21.8 kmpl . The Creta is a 5 seater 4 cylinder car and has length of 4330, width of 1790 and a wheelbase of 2610.",
   },
@@ -50,7 +57,9 @@ export const carData = [
     type: "Automatic",
     fuelType: "Desiel",
     imageUrls:
-     [ "https://stat.overdrive.in/wp-content/odgallery/2020/10/57800_2020_mahindra_thar.jpg"],
+     [[ "https://stat.overdrive.in/wp-content/odgallery/2020/10/57800_2020_mahindra_thar.jpg", '/photos/mahindra-thar.jpeg'],
+     ["/photos/mahindraThar2/1.avif"],
+    ["/photos/mahindraThar2/2.jpg'"]],
     about: 'Mahindra Thar LX Hard Top Diesel AT 4WD is the top model in the Mahindra Thar lineup and the price of Thar top model is Rs. 17.20 Lakh. Mahindra Thar LX Hard Top Diesel AT 4WD is available in Automatic (TC) transmission and offered in 5 colours: Napoli Black, Aqua Marine, Galaxy Grey, Red Rage and Everest White.'
   },
   {
@@ -63,7 +72,9 @@ export const carData = [
     type: "Manual",
     fuelType: "Desiel",
     imageUrls:
-     [ "https://spn-mda.spinny.com/img/hK9_mA4NRZCINH7ny98tsw/tab/file.JPG"],
+     [[ "https://spn-mda.spinny.com/img/hK9_mA4NRZCINH7ny98tsw/tab/file.JPG"],
+     ["/photos/mahindraThar/1.jpg"],
+     ["/photos/mahindraThar/2.jpeg"],],
       about: 'Mahindra Thar LX Hard Top Diesel AT 4WD is the top model in the Mahindra Thar lineup and the price of Thar top model is Rs. 17.20 Lakh. Mahindra Thar LX Hard Top Diesel AT 4WD is available in Automatic (TC) transmission and offered in 5 colours: Napoli Black, Aqua Marine, Galaxy Grey, Red Rage and Everest White.'
   },
   {
@@ -76,7 +87,9 @@ export const carData = [
     type: "Manual",
     fuelType: "Petrol",
     imageUrls:
-      ["https://static.locowiz.com/locomedia/mahindra-first-choice/products/original/cover_image-20220828121955.jpeg"],
+      [["https://static.locowiz.com/locomedia/mahindra-first-choice/products/original/cover_image-20220828121955.jpeg"],
+      ["/photos/hyundaiVerna/.1jpg"],
+      ["/photos/hyundaiVerna/.2jpeg"]],
     about: 'The Hyundai Verna is a 5-seater, 4-cylinder car with a 1.5-liter turbo GDi petrol engine. It has a length of 4,535 mm, a width of 1,765 mm, and a wheelbase of 2,670 mm. The Verna is available in 14 variants, with engine options ranging from 1482 to 1497 cc and a choice of 2 transmissions: Manual and Automatic'
   },
   {
@@ -89,7 +102,9 @@ export const carData = [
     type: "Automatic",
     fuelType: "Petrol",
     imageUrls:
-      ["https://upload.wikimedia.org/wikipedia/commons/e/e8/2023_Suzuki_Fronx_1.2_Delta%2B_%28India%29_front_view.png"],
+      [["https://upload.wikimedia.org/wikipedia/commons/e/e8/2023_Suzuki_Fronx_1.2_Delta%2B_%28India%29_front_view.png"]
+      ["/photos/marutifoxon/.1.webp"],
+      ["/photos/marutifoxon/.2jpg"]],
     about: 'The Maruti FRONX has 2 Petrol Engine and 1 CNG Engine on offer. The Petrol engine is 1197 cc and 998 cc while the CNG engine is 1197 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the FRONX has a mileage of 20.01 kmpl to 28.51 km/kg . The FRONX is a 5 seater 3 cylinder car and has length of 3995mm, width of 1765mm and a wheelbase of 2520mm.'
   },
   {
@@ -102,7 +117,9 @@ export const carData = [
     fuelType: "Petrol",
     price: "210/hr",
     imageUrls:
-      ["https://www.cartoq.com/wp-content/uploads/2022/02/dzire-used-featured.jpg"],
+      [["https://www.cartoq.com/wp-content/uploads/2022/02/dzire-used-featured.jpg"],
+      ["/photos/marutiDezire/1.jpg"],
+      ["/photos/marutiDezire/2.jpg"]],
     about: 'When it comes to the Swift Dzires specifications, you will find that it is a 5-seater compact sedan measuring 3,995mm in length, 1735mm in width, 1515mm height and a 2450mm wheelbase.'
 
   },
@@ -116,7 +133,9 @@ export const carData = [
     fuelType: "Petrol",
     price: "210/hr",
     imageUrls:
-     [ "https://www.cartoq.com/wp-content/uploads/2023/09/hyundai-venue-black-knight-edition-1.jpg"],
+     [[ "https://www.cartoq.com/wp-content/uploads/2023/09/hyundai-venue-black-knight-edition-1.jpg"],
+     ["/photos/hyundaiVenue/.1jpg"],
+     ["/photos/hyundaiVenue/.2jpg"]],
     about: 'The Diesel engine is 1493 cc while the Petrol engine is 1197 cc and 998 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Venue has a mileage of 24.2 kmpl . The Venue is a 5 seater 3 cylinder car and has length of 3995mm, width of 1770mm and a wheelbase of 2500mm.'
 
   },
@@ -129,7 +148,9 @@ export const carData = [
     engine: "2184 cc",
     fuelType: "Diesel",
     price: "210/hr",
-    imageUrls: ["https://i.ytimg.com/vi/aaTFTWF4xPE/maxresdefault.jpg"],
+    imageUrls: [["https://i.ytimg.com/vi/aaTFTWF4xPE/maxresdefault.jpg"],
+    ["/photos/mahindraScor/1.jpg"],
+    ["/photos/hyundaiVenue/2.jpg"]],
     about: 'The Mahindra Scorpio S11 is a 7-seater diesel car. It has a 2.2 L mHawk engine that produces 130 bhp @ 3750 rpm and 300 Nm @ 1500 rpm of torque. The S11 has a 6-speed manual transmission and a rear-wheel drive configuration'
 
   },
@@ -143,7 +164,9 @@ export const carData = [
     engine: "1197 cc",
     fuelType: "Petrol",
     imageUrls:
-     [ "https://imgd.aeplcdn.com/1056x594/cw/ec/20478/Maruti-Suzuki-Baleno-Driving-58937.jpg?v=201711021421&wm=1&q=80"],
+     [[ "https://imgd.aeplcdn.com/1056x594/cw/ec/20478/Maruti-Suzuki-Baleno-Driving-58937.jpg?v=201711021421&wm=1&q=80"],
+     ["/photos/marutiBlano/1.jpg"],
+     ["/photos/marutiBlano/2.webp"]],
     about: 'The Maruti Baleno has 1 Petrol Engine and 1 CNG Engine on offer. The Petrol engine is 1197 cc while the CNG engine is 1197 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Baleno has a mileage of 22.35 kmpl to 30.61 km/kg . The Baleno is a 5 seater 4 cylinder car.'
 
   },
@@ -157,7 +180,10 @@ export const carData = [
     engine: "1396 to 1591 cc",
     fuelType: "Petrol",
     imageUrls:
-      ["https://c.ndtvimg.com/hyundai-creta-facelift-review_625x300_1527234234351.jpg"],
+      [["https://c.ndtvimg.com/hyundai-creta-facelift-review_625x300_1527234234351.jpg"],
+      ["/photos/hyundaiCreta2/1.jpeg"],
+      ["/photos/hyundaiCreta2/2.jpg"],
+    ],
     about: 'The Hyundai Creta has 1 Diesel Engine and 2 Petrol Engine on offer. The Diesel engine is 1493 cc while the Petrol engine is 1497 cc and 1482 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Creta has a mileage of 17.4 to 21.8 kmpl . The Creta is a 5 seater 4 cylinder car and has length of 4330, width of 1790 and a wheelbase of 2610.'
 
   },
@@ -171,7 +197,10 @@ export const carData = [
     engine: "1498 cc",
     fuelType: "diesel",
     imageUrls:
-      ["https://static.locowiz.com/locomedia/mahindra-first-choice/products/original/cover_image-20230105150435.jpeg"],
+      [["https://static.locowiz.com/locomedia/mahindra-first-choice/products/original/cover_image-20230105150435.jpeg"],
+      ["/photos/hondaAmaze/1.jpg"],
+      ["/photos/hondaAmaze/2.avif"],
+    ],
     about: 'The Honda Amaze has 1 Petrol Engine on offer. The Petrol engine is 1199 cc . It is available with Manual & Automatic transmission.Depending upon the variant and fuel type the Amaze has a mileage of 18.3 to 18.6 kmpl . The Amaze is a 5 seater 4 cylinder car and has length of 3995mm, width of 1695 and a wheelbase of 2470.'
   },
   {
@@ -184,7 +213,10 @@ export const carData = [
     engine: "2982 cc",
     fuelType: "diesel",
     imageUrls:
-     [ "https://fastly-production.24c.in/hello-ar/dev/uploads/981bb595-9072-4848-ad29-e238b41f5eae/9e507f6b-5cef-44e8-90de-e6c877e360be/43.jpg?w=750&auto=format"],
+     [[ "https://fastly-production.24c.in/hello-ar/dev/uploads/981bb595-9072-4848-ad29-e238b41f5eae/9e507f6b-5cef-44e8-90de-e6c877e360be/43.jpg?w=750&auto=format"],
+     ["/photos/toyotaFortuner/1.jpg"],
+     ["/photos/toyotaFortuner/2.webp"],
+    ],
     about:'The Diesel engine is 2755 cc while the Petrol engine is 2694 cc . It is available with Manual & Automatic transmission. Depending upon the variant and fuel type the Fortuner has a mileage of 10 kmpl . The Fortuner is a 7 seater 4 cylinder car and has length of 4795mm, width of 1855mm and a wheelbase of 2745mm.'  
   },
   {
@@ -196,7 +228,10 @@ export const carData = [
     mileage: "17km/L",
     engine: "1998 cc",
     fuelType: "diesel",
-    imageUrls: ["https://cargiant.co.in/uploads/car/816594618777.jpg"],
+    imageUrls: [["https://cargiant.co.in/uploads/car/816594618777.jpg"],
+    ["/photos/audia4/1.jpg"],
+    ["/photos/audia4/2.jpg"],
+  ],
     about: 'The Audi A4 has 1 Petrol Engine on offer. The Petrol engine is 1984 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the A4 has a mileage of . The A4 is a 5 seater 4 cylinder car and has length of 4762mm, width of 1847mm and a wheelbase of 2819mm.'
 
   },
@@ -210,7 +245,10 @@ export const carData = [
     engine: "1482 to 1497 cc",
     fuelType: "petrol",
     imageUrls:
-     [ "https://teamcardelight.com/wp-content/uploads/2022/01/kia-seltos-drive-review.jpeg"],
+     [[ "https://teamcardelight.com/wp-content/uploads/2022/01/kia-seltos-drive-review.jpeg",'/photos/kiafront.jpg'],
+     ["/photos/kiaSaltos/1.jpg"],
+     ["/photos/kiaSaltos/2.jpg"],
+    ],
     about: 'Kia Seltos is currently available in Petrol and Diesel engines. The 1482 cc Petrol engine generates a power of 157.81bhp@5500rpm and a torque of 253Nm@1500-3500rpm. The 1493 cc Diesel engine generates a power of 113.42bhp@6300rpm and a torque of 144Nm@4500rpm.'
 
   },
