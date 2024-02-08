@@ -42,7 +42,7 @@ export default function CarCarousel({slides}) {
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded-2xl bg-center bg-contain duration-500"
       ></div>
       {/* Left Arrow */}
       <div
