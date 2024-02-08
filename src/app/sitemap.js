@@ -1,6 +1,6 @@
 import { carData } from "@/Components/CarsData/CarsData";
 export default function sitemap() {
-  const baseUrl = "https://kanhacars.vercel.app/";
+  const baseUrl = "https://kanhatourandtravells.com";
   const carUrls =
     carData.map((car, index) => {
       return {

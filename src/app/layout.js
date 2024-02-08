@@ -6,7 +6,7 @@ import Footer from "@/Components/Footer/Footer";
 const JuliusSansOne = Roboto_Condensed({ subsets: ["latin"] });
 
 export const metadata = {
-  metadataBase: new URL("https://kanhacars.vercel.app"),
+  metadataBase: new URL("https://kanhatourandtravells.com"),
   title: {
     default: "Kanha Tour & Travells - Self Drive Car Rental",
     template: "%s | Kanha Tour & Travells",
