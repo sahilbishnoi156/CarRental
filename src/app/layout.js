@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="self drive car, self drive car in chandigarh,self drive car in mohali, self drive car in zirakpur, car rental, car rental website, renting car, tour and travels, kanha car rental, kanhatourandtravells, kanhacars " />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

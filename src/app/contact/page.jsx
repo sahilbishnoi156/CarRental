@@ -19,8 +19,17 @@ export default function page() {
             <IoCall size={56} className="text-green-400" />
           </div>
           <div>
-            <h3>Phone</h3>
+            <h3>Office</h3>
             <p>+91 9779970515</p>
+          </div>
+        </a>
+        <a className="border-2 border-black flex items-center justify-center gap-2 rounded-lg cursor-pointer sm:hover:scale-105 duration-300 min-w-[290px] min-h-[170px] px-4 hover:shadow-2xl" href="tel:7988467727">
+          <div>
+            <IoCall size={56} className="text-green-400" />
+          </div>
+          <div>
+            <h3>Personal</h3>
+            <p>+91 7988467727</p>
           </div>
         </a>
         <div className="border-2 border-black  min-w-[290px] min-h-[170px] flex items-center justify-center gap-2 rounded-lg sm:hover:scale-105 duration-300 px-4 hover:shadow-2xl" >
@@ -29,7 +38,7 @@ export default function page() {
           </div>
           <div>
             <h3>Address</h3>
-            <p className="text-sm">SHOP NO. LG-25, VIP CENTRAL, <br />
+            <p className="text-sm">SHOP NO. 1, MAYA GARDEN PHASE 3, <br />
             NEAR SOUTH CITY, VIP ROAD <br/>
             ZIRAKPUR</p>
           </div>
@@ -39,13 +48,19 @@ export default function page() {
             <MdEmail size={56} className="text-green-400" />
           </div>
           <div>
-            <h3>E - Mail</h3>
+            <h3>Office E - Mail</h3>
             <p className="sm:text-xl text-sm">help.kanhatravells@gmail.com</p>
           </div>
         </a>
-        <div>
-        {/* <Map address="1600 Amphitheatre Parkway, Mountain View, CA" /> */}
-        </div>
+        <a className="border-2 border-black   min-w-[290px] min-h-[170px] flex items-center justify-center gap-2 rounded-lg cursor-pointer sm:hover:scale-105 duration-300 px-2 hover:shadow-2xl" href="mailto:royalrishu42@gmail.com">
+          <div>
+            <MdEmail size={56} className="text-green-400" />
+          </div>
+          <div>
+            <h3>Personal E - Mail</h3>
+            <p className="sm:text-xl text-sm">royalrishu42@gmail.com</p>
+          </div>
+        </a>
       </div>
     </div>
   );

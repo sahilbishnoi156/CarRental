@@ -77,6 +77,14 @@ export default function Navbar() {
           >
             About Us
           </Link>
+          <Link
+            href="/services"
+            className={`${
+              pathname === "/services" && "border-b-2 border-green-400"
+            } hover:scale-105 duration-75`}
+          >
+            Our Services
+          </Link>
         </div>
       </div>
       <div
@@ -127,6 +135,14 @@ export default function Navbar() {
             }`}
           >
             About Us
+          </Link>
+          <Link
+            href="/services"
+            className={`${
+              pathname === "/services" && "border-b-2 border-green-400"
+            }`}
+          >
+            Our Services
           </Link>
         </div>
       </div>

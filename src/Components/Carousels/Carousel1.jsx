@@ -42,7 +42,7 @@ export default function MainCarousel({slides}) {
       
       <div
         style={{ backgroundImage: `url(${slides[currentIndex]?.url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+        className="w-full h-full rounded-2xl bg-center bg-cover duration-500 brightness-75"
       ></div>
       <div className="flex flex-col items-start justify-center absolute left-2 md:left-16 md:bottom-1/4 bottom-16 text-2xl text-white cursor-pointer rounded-full">
         <h1 className="text-green-400 text-xl duration-200 md:text-4xl">{slides[currentIndex]?.quote}</h1>

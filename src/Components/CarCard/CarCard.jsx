@@ -33,7 +33,7 @@ export default function CarCard({data, type='2x2'}) {
         <h1 className="">{data.engine}</h1>
         </div>
       <div className="flex items-center justify-between">
-        <h1 className="text-3xl text-green-500">{data?.price}</h1>
+        <h1 className="text-2xl text-green-600">{data?.price}</h1>
         
       </div>
     </div>
