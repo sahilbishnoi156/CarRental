@@ -31,6 +31,10 @@ const services = [
     icon: MdOutlineAirportShuttle,
   },
 ];
+export const metadata = {
+    title: 'Our Services',
+    description: 'Explore a world of travel possibilities with our comprehensive services. From seamless One Way Taxi journeys and hassle-free Airport Taxi services to specially curated Honeymoon Tour Packages and the joy of collective adventures with Group Tour and Travels. Choose comfort, reliability, and unforgettable experiences with us'
+  }
 
 export default function page() {
   return (
